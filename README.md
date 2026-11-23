@@ -6,27 +6,27 @@ It is one small Node server with no runtime dependencies: `node:http`, `node:cry
 
 ## What it looks like
 
-These are screenshots from a phone in a conversation with the Kitchen Sink agent. Under each one is the field or the call behind it. Click one to see it full size.
+These are screenshots from a phone in a conversation with the Kitchen Sink agent. Under each one is the field or the call behind it. Click one to watch a short clip of that part of the conversation.
 
 <table>
   <tr>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/menu.jpg"><img src="screenshots/menu.jpg" width="170" alt="The person typed menu and got a carousel with one card for each demo: Text with a Show text button, and Replies with a Show replies button."></a><br>
+      <a href="clips/menu.mp4"><img src="screenshots/menu.jpg" width="170" alt="The person typed menu and got a carousel with one card for each demo: Text with a Show text button, and Replies with a Show replies button."></a><br>
       <b>Menu</b><br>
       <code>carousel</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/text-and-replies.jpg"><img src="screenshots/text-and-replies.jpg" width="170" alt="Two text messages from the Text demo, then a question with the buttons Small, Medium, Large, Next: Actions, and Menu."></a><br>
+      <a href="clips/replies.mp4"><img src="screenshots/text-and-replies.jpg" width="170" alt="Two text messages from the Text demo, then a question with the buttons Small, Medium, Large, Next: Actions, and Menu."></a><br>
       <b>Text and replies</b><br>
       <code>suggestions</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/actions.jpg"><img src="screenshots/actions.jpg" width="170" alt="The answer to a tap on Small, then the Actions demo with the buttons Open in webview, Open in browser, and Call a number."></a><br>
+      <a href="clips/actions.mp4"><img src="screenshots/actions.jpg" width="170" alt="The answer to a tap on Small, then the Actions demo with the buttons Open in webview, Open in browser, and Call a number."></a><br>
       <b>A tap, then actions</b><br>
       <code>postbackData</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/cards.jpg"><img src="screenshots/cards.jpg" width="170" alt="A vertical rich card with a picture, a title, a description, and two buttons, then a horizontal rich card."></a><br>
+      <a href="clips/cards.mp4"><img src="screenshots/cards.jpg" width="170" alt="A vertical rich card with a picture, a title, a description, and two buttons, then a horizontal rich card."></a><br>
       <b>Rich cards</b><br>
       <code>card</code>
     </td>
@@ -36,27 +36,29 @@ These are screenshots from a phone in a conversation with the Kitchen Sink agent
 <table>
   <tr>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/carousel.jpg"><img src="screenshots/carousel.jpg" width="170" alt="A carousel with the cards Violet and Blue, each with its own button: Pick Violet and Pick Blue."></a><br>
+      <a href="clips/carousel.mp4"><img src="screenshots/carousel.jpg" width="170" alt="A carousel with the cards Violet and Blue, each with its own button: Pick Violet and Pick Blue."></a><br>
       <b>Carousel</b><br>
       <code>carousel</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/files.jpg"><img src="screenshots/files.jpg" width="170" alt="An image sent as a file, then a video sent as a file with a preview picture."></a><br>
+      <a href="clips/files-image-video.mp4"><img src="screenshots/files.jpg" width="170" alt="An image sent as a file, then a video sent as a file with a preview picture."></a><br>
       <b>Image and video</b><br>
       <code>file.url</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/audio-pdf-location.jpg"><img src="screenshots/audio-pdf-location.jpg" width="170" alt="An audio file with a player, a PDF named sample.pdf, and a Share location button."></a><br>
+      <a href="clips/files-audio-pdf.mp4"><img src="screenshots/audio-pdf-location.jpg" width="170" alt="An audio file with a player, a PDF named sample.pdf, and a Share location button."></a><br>
       <b>Audio, PDF, location</b><br>
       <code>shareLocation</code>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="screenshots/device-check.jpg"><img src="screenshots/device-check.jpg" width="170" alt="The Device check demo lists what GET /capabilities says this phone supports."></a><br>
+      <a href="clips/expiry-device.mp4"><img src="screenshots/device-check.jpg" width="170" alt="The Device check demo lists what GET /capabilities says this phone supports."></a><br>
       <b>Device check</b><br>
       <code>GET /capabilities</code>
     </td>
   </tr>
 </table>
+
+There are also clips of [the Text demo](clips/text.mp4) and [the typing indicator](clips/typing.mp4).
 
 The [Kitchen Sink showcase](https://messageos-docs.vercel.app/docs/guides/kitchen-sink) in the MessageOS docs has every screenshot with what it shows, and a card for each thing the app can do.
 
@@ -275,6 +277,7 @@ Keep `MESSAGEOS_API_KEY` and `MESSAGEOS_WEBHOOK_SECRET` out of git and out of yo
 | `tour.json` | The demos in tour order: id, name, menu button, and the demo after it |
 | `public/media/` | The sample pictures, video, audio file, and PDF. They were made for this example and you may replace them |
 | `screenshots/` | The phone screenshots in this file. The app does not read or serve them |
+| `clips/` | Short clips of the same conversation, which the pictures in this file open. The app does not read or serve them |
 | `scripts/` | `check`, `setup:webhook`, and `send:menu` |
 | `test/`, `test-support/` | The tests, the stand-in API, and the request rules the tests check each body against |
 | `AGENTS.md` | The rules of this example, written for a coding assistant that works in it |
