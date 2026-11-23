@@ -4,6 +4,76 @@ An example app for a business whose own system answers its customers through the
 
 It is one small Node server with no runtime dependencies: `node:http`, `node:crypto`, and the built-in `fetch`. Read it, run it against your own key, and copy what you need.
 
+## What it looks like
+
+These are screenshots from a phone in a conversation with the Kitchen Sink agent. Under each one is the field or the call behind it. Click one to see it full size.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/menu.jpg"><img src="screenshots/menu.jpg" width="170" alt="The person typed menu and got a carousel with one card for each demo: Text with a Show text button, and Replies with a Show replies button."></a><br>
+      <b>Menu</b><br>
+      <code>carousel</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/text-and-replies.jpg"><img src="screenshots/text-and-replies.jpg" width="170" alt="Two text messages from the Text demo, then a question with the buttons Small, Medium, Large, Next: Actions, and Menu."></a><br>
+      <b>Text and replies</b><br>
+      <code>suggestions</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/actions.jpg"><img src="screenshots/actions.jpg" width="170" alt="The answer to a tap on Small, then the Actions demo with the buttons Open in webview, Open in browser, and Call a number."></a><br>
+      <b>A tap, then actions</b><br>
+      <code>postbackData</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/cards.jpg"><img src="screenshots/cards.jpg" width="170" alt="A vertical rich card with a picture, a title, a description, and two buttons, then a horizontal rich card."></a><br>
+      <b>Rich cards</b><br>
+      <code>card</code>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/carousel.jpg"><img src="screenshots/carousel.jpg" width="170" alt="A carousel with the cards Violet and Blue, each with its own button: Pick Violet and Pick Blue."></a><br>
+      <b>Carousel</b><br>
+      <code>carousel</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/files.jpg"><img src="screenshots/files.jpg" width="170" alt="An image sent as a file, then a video sent as a file with a preview picture."></a><br>
+      <b>Image and video</b><br>
+      <code>file.url</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/audio-pdf-location.jpg"><img src="screenshots/audio-pdf-location.jpg" width="170" alt="An audio file with a player, a PDF named sample.pdf, and a Share location button."></a><br>
+      <b>Audio, PDF, location</b><br>
+      <code>shareLocation</code>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="screenshots/device-check.jpg"><img src="screenshots/device-check.jpg" width="170" alt="The Device check demo lists what GET /capabilities says this phone supports."></a><br>
+      <b>Device check</b><br>
+      <code>GET /capabilities</code>
+    </td>
+  </tr>
+</table>
+
+The [Kitchen Sink showcase](https://messageos-docs.vercel.app/docs/guides/kitchen-sink) in the MessageOS docs has every screenshot with what it shows, and a card for each thing the app can do.
+
+## Documentation
+
+The MessageOS docs explain everything this app does. They ask for a passcode, which MessageOS gives you.
+
+| Page | What is in it |
+| --- | --- |
+| [Kitchen Sink showcase](https://messageos-docs.vercel.app/docs/guides/kitchen-sink) | This app on a phone, and everything it can do |
+| [Quickstart](https://messageos-docs.vercel.app/docs/guides/quickstart) | A key, a first message in one call, then the reply |
+| [When your own system answers](https://messageos-docs.vercel.app/docs/guides/api-only) | The whole loop this app follows, with a checklist of what must be on |
+| [The example app](https://messageos-docs.vercel.app/docs/guides/example-app) | How to run this app, and its receiver in one file |
+| [Webhooks](https://messageos-docs.vercel.app/docs/guides/webhooks) | Every event, the retries, and a complete receiver in seven languages |
+| [Message types](https://messageos-docs.vercel.app/docs/guides/message-types) | A request body for each kind of message |
+| [API reference](https://messageos-docs.vercel.app/docs/api) | Every endpoint, with each request in eight languages |
+
 ## What it shows
 
 Text your agent, and the app answers with a menu. Each card on the menu runs one demo. Every demo ends with two buttons, `Next: <name>` and `Menu`, so you can walk all ten in order. The last demo ends with `Menu` alone.
@@ -204,6 +274,7 @@ Keep `MESSAGEOS_API_KEY` and `MESSAGEOS_WEBHOOK_SECRET` out of git and out of yo
 | `src/types.js` | The shapes of an event and of a message body, as JSDoc types |
 | `tour.json` | The demos in tour order: id, name, menu button, and the demo after it |
 | `public/media/` | The sample pictures, video, audio file, and PDF. They were made for this example and you may replace them |
+| `screenshots/` | The phone screenshots in this file. The app does not read or serve them |
 | `scripts/` | `check`, `setup:webhook`, and `send:menu` |
 | `test/`, `test-support/` | The tests, the stand-in API, and the request rules the tests check each body against |
 | `AGENTS.md` | The rules of this example, written for a coding assistant that works in it |
