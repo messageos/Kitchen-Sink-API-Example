@@ -1,0 +1,23 @@
+{
+  "name": "messageos-kitchen-sink-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An example app that answers people through the MessageOS API and shows every kind of message.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "typecheck": "tsc --noEmit --allowJs --checkJs",
+    "test": "node --test",
+    "setup:webhook": "node scripts/setup-webhook.js",
+    "send:menu": "node scripts/send-menu.js",
+    "check": "node scripts/check.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}

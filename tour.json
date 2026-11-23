@@ -1,0 +1,12 @@
+[
+  { "id": "text", "name": "Text", "button": "Show text", "next": "replies" },
+  { "id": "replies", "name": "Replies", "button": "Show replies", "next": "actions" },
+  { "id": "actions", "name": "Actions", "button": "Show actions", "next": "card" },
+  { "id": "card", "name": "Card", "button": "Show a card", "next": "carousel" },
+  { "id": "carousel", "name": "Carousel", "button": "Show a carousel", "next": "files" },
+  { "id": "files", "name": "Files", "button": "Show files", "next": "location" },
+  { "id": "location", "name": "Location", "button": "Show location", "next": "typing" },
+  { "id": "typing", "name": "Typing", "button": "Show typing", "next": "expiry" },
+  { "id": "expiry", "name": "Expiry", "button": "Show expiry", "next": "device" },
+  { "id": "device", "name": "Device check", "button": "Show device check", "next": "menu" }
+]
