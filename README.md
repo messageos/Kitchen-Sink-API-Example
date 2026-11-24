@@ -11,7 +11,7 @@ These are screenshots from a phone in a conversation with the Kitchen Sink agent
 <table>
   <tr>
     <td align="center" valign="top" width="25%">
-      <a href="clips/menu.mp4"><img src="screenshots/menu.jpg" width="170" alt="The person typed menu and got a carousel with one card for each demo: Text with a Show text button, and Replies with a Show replies button."></a><br>
+      <a href="clips/menu.mp4"><img src="screenshots/menu.jpg" width="170" alt="The person tapped Menu and got a carousel with one card for each demo: Text with a Show text button, and Replies with a Show replies button."></a><br>
       <b>Menu</b><br>
       <code>carousel</code>
     </td>
@@ -60,7 +60,7 @@ These are screenshots from a phone in a conversation with the Kitchen Sink agent
 
 There are also clips of [the Text demo](clips/text.mp4) and [the typing indicator](clips/typing.mp4).
 
-The [Kitchen Sink showcase](https://messageos-docs.vercel.app/docs/guides/kitchen-sink) in the MessageOS docs has every screenshot with what it shows, and a card for each thing the app can do.
+The [Kitchen Sink showcase](https://docs.messageos.ai/docs/guides/kitchen-sink) in the MessageOS docs has every screenshot with what it shows, and a card for each thing the app can do.
 
 ## Documentation
 
@@ -68,13 +68,13 @@ The MessageOS docs explain everything this app does. They ask for a passcode, wh
 
 | Page | What is in it |
 | --- | --- |
-| [Kitchen Sink showcase](https://messageos-docs.vercel.app/docs/guides/kitchen-sink) | This app on a phone, and everything it can do |
-| [Quickstart](https://messageos-docs.vercel.app/docs/guides/quickstart) | A key, a first message in one call, then the reply |
-| [When your own system answers](https://messageos-docs.vercel.app/docs/guides/api-only) | The whole loop this app follows, with a checklist of what must be on |
-| [The example app](https://messageos-docs.vercel.app/docs/guides/example-app) | How to run this app, and its receiver in one file |
-| [Webhooks](https://messageos-docs.vercel.app/docs/guides/webhooks) | Every event, the retries, and a complete receiver in seven languages |
-| [Message types](https://messageos-docs.vercel.app/docs/guides/message-types) | A request body for each kind of message |
-| [API reference](https://messageos-docs.vercel.app/docs/api) | Every endpoint, with each request in eight languages |
+| [Kitchen Sink showcase](https://docs.messageos.ai/docs/guides/kitchen-sink) | This app on a phone, and everything it can do |
+| [Quickstart](https://docs.messageos.ai/docs/guides/quickstart) | A key, a first message in one call, then the reply |
+| [When your own system answers](https://docs.messageos.ai/docs/guides/api-only) | The whole loop this app follows, with a checklist of what must be on |
+| [The example app](https://docs.messageos.ai/docs/guides/example-app) | How to run this app, and its receiver in one file |
+| [Webhooks](https://docs.messageos.ai/docs/guides/webhooks) | Every event, the retries, and a complete receiver in seven languages |
+| [Message types](https://docs.messageos.ai/docs/guides/message-types) | A request body for each kind of message |
+| [API reference](https://docs.messageos.ai/docs/api) | Every endpoint, with each request in eight languages |
 
 ## What it shows
 
